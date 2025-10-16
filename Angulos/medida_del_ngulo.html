@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Medida del ángulo | Los ángulos: una mirada a nuestro entorno </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Bailon Perez Ivan" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-5"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Los ángulos: una mirada a nuestro entorno</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Los Ángulos</a></li>
+   <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+   <li class="current-page-parent"><a href="contenido.html" class="current-page-parent daddy">Contenido</a>
+   <ul>
+      <li><a href="qu_es_un_ngulo.html" class="no-ch">¿Qué es un ángulo?</a></li>
+      <li id="active"><a href="medida_del_ngulo.html" class="active no-ch">Medida del ángulo</a></li>
+      <li><a href="clasificacin_de_los_ngulos.html" class="no-ch">Clasificación de los ángulos</a></li>
+   </ul>
+   </li>
+   <li><a href="actividades_geogebra.html" class="no-ch">Actividades GeoGebra</a></li>
+   <li><a href="aplicacin_prctica.html" class="no-ch">Aplicación práctica</a></li>
+   <li><a href="evaluacin.html" class="no-ch">Evaluación</a></li>
+   <li><a href="recursos_complementarios.html" class="no-ch">Recursos complementarios</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="qu_es_un_ngulo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="clasificacin_de_los_ngulos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Medida del ángulo</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id25">
+<div class="iDevice emphasis0" >
+<div id="ta25_127_2" class="block iDevice_content">
+<div class="exe-text"><style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top, #eaf6ff, #cde9ff);
+    margin: 0;
+    color: #222;
+  }
+  section {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 900px;
+    background: #ffffffcc;
+    border-radius: 15px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  h2 {
+    color: #0077b6;
+    border-left: 5px solid #0077b6;
+    padding-left: 10px;
+  }
+  p {
+    line-height: 1.6;
+    font-size: 1.05em;
+    text-align: justify;
+  }
+  .contenedor-angulo {
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+  }
+  svg {
+    width: 340px;
+    height: 250px;
+  }
+  .transportador {
+    fill: none;
+    stroke: rgba(0, 0, 0, 0.3);
+    stroke-width: 1.2;
+  }
+  .marcas {
+    stroke: rgba(0, 0, 0, 0.6);
+    stroke-width: 1;
+  }
+  .numeros {
+    font-size: 8px;
+    fill: #333;
+  }
+  .linea1, .linea2 {
+    stroke: #0077b6;
+    stroke-width: 4;
+    stroke-linecap: round;
+  }
+  .sector {
+    fill: rgba(255, 77, 109, 0.25);
+    stroke: #ff4d6d;
+    stroke-width: 2;
+  }
+  .vertice {
+    fill: #ff4d6d;
+  }
+  .valor-angulo {
+    font-size: 20px;
+    fill: #ff4d6d;
+    font-weight: bold;
+  }
+  .texto-recto {
+    font-size: 16px;
+    fill: #0077b6;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .video {
+    text-align: center;
+    margin-top: 30px;
+  }
+  iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+</style>
+<section>
+<h2>¿Cómo se mide un ángulo?</h2>
+<p>Los <strong>ángulos</strong> se miden en <strong>grados (°)</strong> usando un transportador. Un semicírculo del transportador cubre <strong>0°–180°</strong>.</p>
+<div class="contenedor-angulo"><svg viewbox="0 0 340 230" id="svg"> <!-- Transportador realista --> <path d="M60 180 A110 110 0 0 1 280 180" class="transportador"></path> <!-- Marcas cada 10° --> <g id="marcas"></g> <!-- Sector dinámico --> <path id="sector" class="sector" d=""></path> <!-- Lados --> <line id="ladoA" x1="170" y1="180" x2="280" y2="180" class="linea1"></line> <line id="ladoB" x1="170" y1="180" x2="280" y2="180" class="linea2"></line> <!-- Vértice --> <circle cx="170" cy="180" r="5" class="vertice"></circle> <!-- Textos --> <text id="texto-angulo" x="200" y="130" class="valor-angulo">0°</text> <text id="texto-recto" x="200" y="155" class="texto-recto">Ángulo recto</text> </svg></div>
+<p style="text-align: center; margin-top: 15px;">El siguiente video muestra cómo medir un ángulo con el transportador:</p>
+<div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/CRXi4jQiRIM" title="Medición de ángulos" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+</section>
+<p>
+<script>
+/* === CONFIGURACIÓN === */
+const cx = 170, cy = 180, r = 110;
+const pasos = [0, 45, 90, 135, 180];
+const pausa = 3000;
+const duracion = 800;
+
+const ladoB = document.getElementById("ladoB");
+const sector = document.getElementById("sector");
+const texto = document.getElementById("texto-angulo");
+const textoRecto = document.getElementById("texto-recto");
+const marcas = document.getElementById("marcas");
+
+function degToRad(g){ return g * Math.PI / 180; }
+function punto(grados){
+  const rad = degToRad(grados);
+  return {
+    x: cx + r * Math.cos(rad),
+    y: cy - r * Math.sin(rad)
+  };
+}
+
+/* === DIBUJAR MARCAS DEL TRANSPORTADOR === */
+for (let g = 0; g <= 180; g += 10) {
+  const p1 = {
+    x: cx + (r - 10) * Math.cos(degToRad(g)),
+    y: cy - (r - 10) * Math.sin(degToRad(g))
+  };
+  const p2 = {
+    x: cx + r * Math.cos(degToRad(g)),
+    y: cy - r * Math.sin(degToRad(g))
+  };
+  const linea = document.createElementNS("http://www.w3.org/2000/svg", "line");
+  linea.setAttribute("x1", p1.x);
+  linea.setAttribute("y1", p1.y);
+  linea.setAttribute("x2", p2.x);
+  linea.setAttribute("y2", p2.y);
+  linea.setAttribute("class", "marcas");
+  marcas.appendChild(linea);
+
+  if (g % 30 === 0) {
+    const tx = cx + (r - 25) * Math.cos(degToRad(g));
+    const ty = cy - (r - 25) * Math.sin(degToRad(g));
+    const t = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    t.setAttribute("x", tx - 8);
+    t.setAttribute("y", ty + 3);
+    t.setAttribute("class", "numeros");
+    t.textContent = g + "°";
+    marcas.appendChild(t);
+  }
+}
+
+/* === DIBUJAR SECTOR INTERNO === */
+function dibujarSector(grados) {
+  if (grados <= 0) { sector.setAttribute("d", ""); return; }
+  const pA = punto(0);
+  const pB = punto(grados);
+  const d = `M ${cx} ${cy} L ${pA.x} ${pA.y} A ${r} ${r} 0 0 0 ${pB.x} ${pB.y} Z`;
+  sector.setAttribute("d", d);
+}
+
+/* === ACTUALIZAR POSICIÓN DEL LADO MÓVIL === */
+function moverLado(grados) {
+  const pB = punto(grados);
+  ladoB.setAttribute("x2", pB.x);
+  ladoB.setAttribute("y2", pB.y);
+}
+
+/* === POSICIÓN DEL TEXTO DINÁMICO (dentro del sector) === */
+function moverTexto(grados) {
+  const medio = grados / 2;
+  const pT = punto(medio);
+  const tx = cx + (r / 2) * Math.cos(degToRad(medio));
+  const ty = cy - (r / 2) * Math.sin(degToRad(medio));
+  texto.setAttribute("x", tx - 10);
+  texto.setAttribute("y", ty);
+}
+
+/* === ANIMACIÓN ENTRE ÁNGULOS === */
+function animar(inicio, fin, dur) {
+  return new Promise(resolve => {
+    const t0 = performance.now();
+    function paso(t) {
+      const k = Math.min(1, (t - t0) / dur);
+      const ang = inicio + (fin - inicio) * k;
+      moverLado(ang);
+      dibujarSector(ang);
+      moverTexto(ang);
+      texto.textContent = `${Math.round(ang)}°`;
+      textoRecto.style.opacity = (Math.round(ang) === 90) ? 1 : 0;
+      if (k < 1) requestAnimationFrame(paso);
+      else resolve();
+    }
+    requestAnimationFrame(paso);
+  });
+}
+
+/* === SECUENCIA COMPLETA === */
+async function secuencia() {
+  moverLado(0); dibujarSector(0); texto.textContent = "0°";
+  for (;;) {
+    for (let i = 0; i < pasos.length; i++) {
+      const fin = pasos[i];
+      const inicio = parseInt(texto.textContent) || 0;
+      await animar(inicio, fin, duracion);
+      await new Promise(r => setTimeout(r, pausa));
+    }
+    await animar(180, 0, 1000);
+    await new Promise(r => setTimeout(r, 1000));
+  }
+}
+secuencia();
+</script>
+</p>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="qu_es_un_ngulo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="clasificacin_de_los_ngulos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

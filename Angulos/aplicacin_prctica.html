@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Aplicación práctica | Los ángulos: una mirada a nuestro entorno </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Bailon Perez Ivan" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Los ángulos: una mirada a nuestro entorno</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Los Ángulos</a></li>
+   <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+   <li><a href="contenido.html" class="daddy">Contenido</a>
+   <ul class="other-section">
+      <li><a href="qu_es_un_ngulo.html" class="no-ch">¿Qué es un ángulo?</a></li>
+      <li><a href="medida_del_ngulo.html" class="no-ch">Medida del ángulo</a></li>
+      <li><a href="clasificacin_de_los_ngulos.html" class="no-ch">Clasificación de los ángulos</a></li>
+   </ul>
+   </li>
+   <li><a href="actividades_geogebra.html" class="no-ch">Actividades GeoGebra</a></li>
+   <li id="active"><a href="aplicacin_prctica.html" class="active no-ch">Aplicación práctica</a></li>
+   <li><a href="evaluacin.html" class="no-ch">Evaluación</a></li>
+   <li><a href="recursos_complementarios.html" class="no-ch">Recursos complementarios</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="actividades_geogebra.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="evaluacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Aplicación práctica</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id60">
+<div class="iDevice emphasis0" >
+<div id="ta60_161_2" class="block iDevice_content">
+<div class="exe-text"><p><!-- Fuente y estilo general --></p>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #1a237e;
+    background-color: #ffffff;
+  }
+
+  h2 {
+    text-align: center;
+    color: #1a237e;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: justify;
+    color: #1a237e;
+  }
+
+  .container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 25px auto;
+    border: 2px solid #1a237e;
+    border-radius: 12px;
+    background: linear-gradient(to top, #c8f0ff 50%, #ffffff 50%);
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .ground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #4caf50;
+  }
+
+  .wall {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    width: 10px;
+    height: 300px;
+    background: #888;
+  }
+
+  .ladder {
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    width: 300px;
+    height: 6px;
+    background: #b5651d;
+    transform-origin: left bottom;
+    transform: rotate(0deg);
+    border-radius: 3px;
+    transition: transform 0.5s ease;
+  }
+
+  .angle-text {
+    position: absolute;
+    bottom: 40px;
+    left: 120px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0d47a1;
+  }
+
+  .slider-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+
+  input[type="range"] {
+    width: 100%;
+    accent-color: #1a237e;
+  }
+</style>
+<h2>Aplicación práctica: Cálculo de un ángulo con una escalera</h2>
+<p>Imagina una escalera apoyada sobre una pared del lado derecho. La base de la escalera se mantiene fija en el suelo (lado izquierdo). Al mover el control, la escalera gira en sentido <b>antihorario</b>, formando un ángulo entre el suelo y la pared.</p>
+<div class="container">
+<div class="ground"></div>
+<div class="wall"></div>
+<div id="ladder" class="ladder"></div>
+<div id="angleText" class="angle-text">Ángulo: 0° | Altura: 0 m</div>
+<div class="slider-container"><input type="range" id="angleRange" min="0" max="75" step="1" value="0" /></div>
+</div>
+<p>
+<script>
+const ladder = document.getElementById("ladder");
+const angleText = document.getElementById("angleText");
+const range = document.getElementById("angleRange");
+
+const ladderLength = 10; // longitud de la escalera en metros
+
+function updateAngle() {
+  const angle = parseFloat(range.value);
+  const radians = angle * Math.PI / 180;
+  const height = (ladderLength * Math.sin(radians)).toFixed(2);
+
+  // Gira la escalera en sentido ANTihorario
+  ladder.style.transform = `rotate(-${angle}deg)`;
+  angleText.textContent = `Ángulo: ${angle}° | Altura: ${height} m`;
+}
+
+range.addEventListener("input", updateAngle);
+</script>
+</p>
+<p>Esta animación muestra cómo se forma un ángulo entre el suelo, la escalera y la pared. La altura alcanzada por la escalera depende del ángulo de inclinación, de acuerdo con la relación trigonométrica: <code>sen(θ) = altura / longitud</code>. Usa el control para cambiar el ángulo y observa cómo varía la altura.</p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><section style="max-width: 900px; margin: 20px auto; font-family: 'Poppins',sans-serif; color: #1a237e;">
+<h3 style="margin-top: 10px; margin-bottom: 6px;">¿Cómo se calcula el ángulo? — Explicación paso a paso</h3>
+<p style="text-align: justify; color: #1a237e;">En esta simulación utilizamos una escalera de longitud fija (por ejemplo <strong>10 m</strong>) apoyada en el suelo y en una pared. El ángulo que forma la escalera con el suelo (θ) se relaciona con la <strong>altura</strong> a la que llega la escalera en la pared mediante la función trigonométrica <em>seno</em>.</p>
+<ol style="line-height: 1.6;">
+<li><strong>Definir los elementos:</strong>
+<ul>
+<li><code>longitud</code> = longitud de la escalera (lado hipotenusa en el triángulo rectángulo formado).</li>
+<li><code>altura</code> = distancia vertical desde el suelo hasta el punto donde la escalera toca la pared (lado opuesto).</li>
+<li><code>θ</code> = ángulo entre la escalera y el suelo (lo que queremos calcular).</li>
+</ul>
+</li>
+<li><strong>Relación trigonométrica:</strong>
+<p>En el triángulo rectángulo formado por suelo–escalera–pared se cumple:</p>
+<p style="text-align: center; font-weight: 600;">sin(θ) = altura / longitud</p>
+</li>
+<li><strong>Calcular la altura al mover el control (cuando θ es conocido):</strong>
+<p>Si conocemos el ángulo θ (por ejemplo con el deslizador), la altura se obtiene con:</p>
+<p style="text-align: center; font-weight: 600;">altura = longitud × sin(θ)</p>
+<p>Ejemplo: si <code>longitud = 10 m</code> y <code>θ = 30°</code>, entonces <code>altura = 10 × sin(30°) = 10 × 0.5 = 5 m</code>.</p>
+</li>
+<li><strong>Calcular el ángulo si conocemos la altura (caso inverso):</strong>
+<p>Si conocemos la altura y la longitud, el ángulo se calcula con la función inversa del seno (arcsin):</p>
+<p style="text-align: center; font-weight: 600;">θ = arcsin( altura / longitud )</p>
+<p>Ejemplo: si <code>altura = 6 m</code> y <code>longitud = 10 m</code>, entonces <code>θ = arcsin(0.6) ≈ 36.87°</code>.</p>
+</li>
+<li><strong>Restricciones y cuidados:</strong>
+<ul>
+<li>Debemos asegurarnos de que <code>altura ≤ longitud</code>. Si la altura es mayor que la longitud, la razón <code>altura/longitud</code> excede 1 y <code>arcsin</code> no está definida (no hay solución real).</li>
+<li>En la simulación, el deslizador limita el ángulo a valores razonables (por ejemplo 0°–75°) para evitar situaciones físicamente imposibles.</li>
+</ul>
+</li>
+<li><strong>Relación con la animación (resumen técnico breve):</strong>
+<ul>
+<li>El programa toma el valor del deslizador (ángulo en grados).</li>
+<li>Convierte grados → radianes: <code>radians = angle * Math.PI / 180</code>.</li>
+<li>Calcula altura: <code>height = length * Math.sin(radians)</code> y la muestra en metros.</li>
+<li>Aplica la rotación visual a la escalera con CSS: <code>transform: rotate(-angledeg)</code> (pregunta del signo: usamos el signo que orienta la escalera en el mismo sentido visual que la escena).</li>
+</ul>
+</li>
+</ol>
+<h4 style="margin-top: 6px; margin-bottom: 6px;">Pequeño ejemplo de código (JavaScript)</h4>
+<pre style="background: #f4f9ff; padding: 10px; border-radius: 6px; overflow: auto;">// longitud en metros
+const length = 10;
+// ángulo en grados (valor del deslizador)
+const angleDeg = 30;
+// pasar a radianes
+const rad = angleDeg * Math.PI / 180;
+// altura (m)
+const height = length * Math.sin(rad); // -&gt; 5 m para 30°
+  </pre>
+<p style="text-align: justify; color: #1a237e;">Con esta explicación los estudiantes pueden ver claramente la <em>conexión</em> entre la construcción geométrica (escalera, suelo, pared), la función trigonométrica y el cálculo numérico. Si quieres, puedo añadir un pequeño ejercicio al final donde el alumno deba introducir la altura y calcular el ángulo (con comprobación automática).</p>
+</section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_talk" id="id63">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_talk.png)"><h1 class="iDeviceTitle">Evaluación</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta63_164_2" class="block iDevice_content">
+<div class="exe-text"><style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #eef2ff;
+    color: #1a237e;
+    padding: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    color: #283593;
+  }
+
+  .question-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+    margin: 15px auto;
+    max-width: 700px;
+  }
+
+  .options {
+    margin-top: 10px;
+  }
+
+  button {
+    margin-top: 10px;
+    background: #3949ab;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background: #1a237e;
+  }
+
+  .feedback {
+    margin-top: 8px;
+    font-weight: 600;
+  }
+
+  #score {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #283593;
+  }
+</style>
+<h2 style="text-align: left;">🧮 Cuestionario: Cálculo de Ángulos con la Escalera</h2>
+<div id="quiz-container"></div>
+<p id="score">Puntaje: 0</p>
+<p>
+<script>
+const questions = [
+  {
+    q: "1. ¿Qué función trigonométrica relaciona el ángulo con la altura y la longitud de la escalera?",
+    options: ["Coseno", "Tangente", "Seno", "Cosecante"],
+    correct: 2,
+    feedback: "Correcto ✅. El seno relaciona el ángulo con el lado opuesto (altura) y la hipotenusa (longitud)."
+  },
+  {
+    q: "2. Si la escalera mide 10 m y el ángulo es de 30°, ¿cuál es la altura alcanzada?",
+    options: ["3 m", "5 m", "8.6 m", "10 m"],
+    correct: 1,
+    feedback: "Bien hecho 🎯. La altura es 10 × sin(30°) = 10 × 0.5 = 5 m."
+  },
+  {
+    q: "3. ¿Qué ocurre si la altura es mayor que la longitud de la escalera?",
+    options: [
+      "El ángulo se vuelve negativo",
+      "No hay solución real",
+      "La escalera es más corta",
+      "El ángulo es de 90°"
+    ],
+    correct: 1,
+    feedback: "Exacto ⚠️. Si altura > longitud, la razón es mayor que 1 y no hay solución real para el seno."
+  },
+  {
+    q: "4. ¿Cuál es la fórmula para calcular el ángulo cuando se conoce la altura y la longitud?",
+    options: [
+      "θ = sin(altura / longitud)",
+      "θ = cos(altura / longitud)",
+      "θ = arcsin(altura / longitud)",
+      "θ = arctan(altura / longitud)"
+    ],
+    correct: 2,
+    feedback: "Muy bien 🧠. El ángulo se calcula con la función inversa del seno: θ = arcsin(altura / longitud)."
+  },
+  {
+    q: "5. Si una escalera de 8 m alcanza una altura de 4 m, ¿qué ángulo forma con el suelo?",
+    options: ["30°", "45°", "60°", "15°"],
+    correct: 0,
+    feedback: "Perfecto 👍. θ = arcsin(4/8) = arcsin(0.5) = 30°."
+  },
+  {
+    q: "6. ¿Qué lado del triángulo representa el suelo?",
+    options: [
+      "El lado opuesto",
+      "La hipotenusa",
+      "El lado adyacente",
+      "El cateto contrario"
+    ],
+    correct: 2,
+    feedback: "Correcto ✅. El suelo es el lado adyacente al ángulo de inclinación."
+  },
+  {
+    q: "7. Si el ángulo aumenta, ¿qué sucede con la altura que alcanza la escalera?",
+    options: [
+      "Disminuye",
+      "Aumenta",
+      "Permanece igual",
+      "No depende del ángulo"
+    ],
+    correct: 1,
+    feedback: "Exacto 📈. Al aumentar el ángulo, la escalera se inclina más y sube más alto."
+  },
+  {
+    q: "8. ¿Qué relación existe entre el coseno y la escalera?",
+    options: [
+      "Relaciona altura y longitud",
+      "Relaciona suelo y longitud",
+      "Relaciona altura y suelo",
+      "Relaciona dos ángulos"
+    ],
+    correct: 1,
+    feedback: "Bien 😎. El coseno relaciona el lado adyacente (suelo) con la hipotenusa (longitud de la escalera)."
+  },
+  {
+    q: "9. En un triángulo rectángulo, ¿qué mide siempre 90°?",
+    options: ["La pared", "El suelo", "El ángulo opuesto", "El ángulo recto entre pared y suelo"],
+    correct: 3,
+    feedback: "Muy bien ✅. El ángulo entre la pared y el suelo siempre es recto, 90°."
+  },
+  {
+    q: "10. Si el ángulo es de 0°, ¿qué sucede con la altura?",
+    options: [
+      "Es máxima",
+      "Es igual a la longitud",
+      "Es cero",
+      "No se puede calcular"
+    ],
+    correct: 2,
+    feedback: "Correcto 🏁. Si el ángulo es 0°, la escalera está en el suelo y la altura es 0 m."
+  }
+];
+
+let score = 0;
+
+const container = document.getElementById("quiz-container");
+const scoreDisplay = document.getElementById("score");
+
+questions.forEach((question, i) => {
+  const card = document.createElement("div");
+  card.className = "question-card";
+
+  const qText = document.createElement("p");
+  qText.textContent = question.q;
+  card.appendChild(qText);
+
+  const optionsDiv = document.createElement("div");
+  optionsDiv.className = "options";
+
+  question.options.forEach((opt, index) => {
+    const btn = document.createElement("button");
+    btn.textContent = opt;
+    btn.onclick = () => checkAnswer(i, index, btn, feedback);
+    optionsDiv.appendChild(btn);
+  });
+
+  const feedback = document.createElement("p");
+  feedback.className = "feedback";
+
+  card.appendChild(optionsDiv);
+  card.appendChild(feedback);
+  container.appendChild(card);
+});
+
+function checkAnswer(qIndex, optIndex, button, feedback) {
+  const question = questions[qIndex];
+  if (optIndex === question.correct) {
+    feedback.textContent = question.feedback;
+    feedback.style.color = "#2e7d32";
+    score += 2;
+    scoreDisplay.textContent = `Puntaje: ${score}`;
+    // Desactivar botones
+    const buttons = button.parentNode.querySelectorAll("button");
+    buttons.forEach(b => b.disabled = true);
+  } else {
+    feedback.textContent = "❌ Vuelve a intentarlo.";
+    feedback.style.color = "#c62828";
+  }
+}
+</script>
+</p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="actividades_geogebra.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="evaluacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>

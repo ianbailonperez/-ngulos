@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>¿Qué es un ángulo? | Los ángulos: una mirada a nuestro entorno </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Bailon Perez Ivan" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-4"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Los ángulos: una mirada a nuestro entorno</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Los Ángulos</a></li>
+   <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+   <li class="current-page-parent"><a href="contenido.html" class="current-page-parent daddy">Contenido</a>
+   <ul>
+      <li id="active"><a href="qu_es_un_ngulo.html" class="active no-ch">¿Qué es un ángulo?</a></li>
+      <li><a href="medida_del_ngulo.html" class="no-ch">Medida del ángulo</a></li>
+      <li><a href="clasificacin_de_los_ngulos.html" class="no-ch">Clasificación de los ángulos</a></li>
+   </ul>
+   </li>
+   <li><a href="actividades_geogebra.html" class="no-ch">Actividades GeoGebra</a></li>
+   <li><a href="aplicacin_prctica.html" class="no-ch">Aplicación práctica</a></li>
+   <li><a href="evaluacin.html" class="no-ch">Evaluación</a></li>
+   <li><a href="recursos_complementarios.html" class="no-ch">Recursos complementarios</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="contenido.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="medida_del_ngulo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">¿Qué es un ángulo?</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id10">
+<div class="iDevice emphasis0" >
+<div id="ta10_137_2" class="block iDevice_content">
+<div class="exe-text"><style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top, #eaf6ff, #cde9ff);
+    margin: 0;
+    padding: 0;
+    color: #222;
+  }
+
+  section {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 900px;
+    background: #ffffffcc;
+    border-radius: 15px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  h2 {
+    color: #0077b6;
+    border-left: 5px solid #0077b6;
+    padding-left: 10px;
+  }
+
+  p {
+    line-height: 1.6em;
+    font-size: 1.05em;
+    text-align: justify;
+  }
+
+  ul {
+    font-size: 1.05em;
+    line-height: 1.8em;
+  }
+
+  /* --- Animación del ángulo --- */
+  .contenedor-angulo {
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+  }
+
+  svg {
+    width: 320px;
+    height: 240px;
+  }
+
+  .linea1, .linea2 {
+    stroke: #0077b6;
+    stroke-width: 4;
+    transform-origin: 150px 160px;
+  }
+
+  /* Lado OA (fijo) */
+  .linea1 {
+    transform: rotate(0deg);
+  }
+
+  /* Lado OB (móvil, abre desde OA en sentido antihorario) */
+  .linea2 {
+    animation: abrirAntihorario 3s infinite alternate ease-in-out;
+  }
+
+  /* Sector del ángulo */
+  .sector {
+    fill: rgba(255, 77, 109, 0.25);
+    stroke: #ff4d6d;
+    stroke-width: 2;
+    transform-origin: 150px 160px;
+    transform: rotate(0deg);
+    animation: sectorAntihorario 3s infinite alternate ease-in-out;
+  }
+
+  .vertice {
+    fill: #ff4d6d;
+  }
+
+  /* Animaciones */
+  @keyframes abrirAntihorario {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-60deg); }
+  }
+
+  @keyframes sectorAntihorario {
+    0% {
+      d: path("M150 160 L260 160 A110 110 0 0 0 260 160 Z");
+      opacity: 0.2;
+    }
+    100% {
+      d: path("M150 160 L260 160 A110 110 0 0 0 205 70 Z");
+      opacity: 0.6;
+    }
+  }
+
+  /* Etiquetas */
+  .etiqueta {
+    font-size: 0.9em;
+    font-weight: bold;
+    fill: #333;
+  }
+
+  .leyenda {
+    background: #e0f7ff;
+    border-left: 5px solid #0077b6;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 0.95em;
+  }
+
+  .destacado {
+    color: #0077b6;
+    font-weight: bold;
+  }
+</style>
+<section>
+<h2>¿Qué es un ángulo?</h2>
+<p>Un <strong>ángulo</strong> es la abertura formada por dos <strong>semirrectas</strong> que tienen un mismo punto de origen llamado <strong>vértice</strong>. A continuación puedes observar cómo se forma un ángulo cuando el lado <strong>OB</strong> gira en sentido <strong>antihorario</strong> desde el lado <strong>OA</strong>.</p>
+<div class="contenedor-angulo"><svg viewbox="0 0 300 220"> <!-- Sector del ángulo --> <path d="M150 160 L260 160 A110 110 0 0 0 205 70 Z" class="sector"></path> <!-- Lado OA --> <line x1="150" y1="160" x2="260" y2="160" class="linea1"></line> <!-- Lado OB (rotando) --> <line x1="150" y1="160" x2="260" y2="160" class="linea2"></line> <!-- Vértice --> <circle cx="150" cy="160" r="6" class="vertice"></circle> <!-- Etiquetas --> <text x="265" y="165" class="etiqueta">A</text> <text x="200" y="65" class="etiqueta">B</text> <text x="130" y="180" class="etiqueta">O (Vértice)</text> <text x="190" y="130" class="etiqueta" fill="#ff4d6d">Apertura</text> </svg></div>
+<div class="leyenda">
+<p><span class="destacado">Partes del ángulo:</span></p>
+<ul>
+<li><strong>Vértice (O):</strong> Punto donde se unen las dos semirrectas.</li>
+<li><strong>Lados (OA y OB):</strong> Las semirrectas que forman el ángulo.</li>
+<li><strong>Apertura o amplitud:</strong> La región comprendida entre los dos lados del ángulo.</li>
+</ul>
+</div>
+</section>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="contenido.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="medida_del_ngulo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
